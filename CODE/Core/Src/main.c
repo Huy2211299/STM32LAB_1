@@ -92,21 +92,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   init_exercise9();
-  int count = 0;
-  HAL_GPIO_WritePin(led0_GPIO_Port, led0_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(led1_GPIO_Port, led1_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(led2_GPIO_Port, led2_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(led3_GPIO_Port, led3_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(led4_GPIO_Port, led4_Pin, GPIO_PIN_RESET);
   while (1)
   {
-	  if(count>=12){
-		  count = 0;
-	  }
-	  else{
-		  clearNumberOnClock(count);
-		  count++;
-	  }
+
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 

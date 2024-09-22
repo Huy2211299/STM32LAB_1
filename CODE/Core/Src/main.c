@@ -94,7 +94,7 @@ int main(void)
   init_exercise10();
   while (1)
   {
-	  exercise10_run();
+	  exercise10_run();//
 	  HAL_Delay(10);
     /* USER CODE END WHILE */
 

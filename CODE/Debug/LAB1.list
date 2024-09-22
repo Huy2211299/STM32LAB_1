@@ -809,12 +809,12 @@ int main(void)
  8000650:	f7ff feb4 	bl	80003bc <init_exercise10>
   while (1)
   {
-	  exercise10_run();
+	  exercise10_run();//
  8000654:	f7ff feb8 	bl	80003c8 <exercise10_run>
 	  HAL_Delay(10);
  8000658:	200a      	movs	r0, #10
  800065a:	f000 f97f 	bl	800095c <HAL_Delay>
-	  exercise10_run();
+	  exercise10_run();//
  800065e:	e7f9      	b.n	8000654 <main+0x14>
 
 08000660 <SystemClock_Config>:
